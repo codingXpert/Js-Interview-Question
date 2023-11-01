@@ -104,7 +104,6 @@ Output:
 
 Rohan
 Deepak
-
 ```
 
 printDetails function:
