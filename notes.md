@@ -184,7 +184,7 @@ const userDetails1 = {
         console.log(this.name,state,country)
     }
 
-printDetails.apply(userDetails1, **["Jharkhand", "India"]**)
+printDetails.apply(userDetails1, ["Jharkhand", "India"])
 ```
 
 ```
@@ -210,7 +210,7 @@ const userDetails1 = {
         console.log(this.name)
     }
 
-printDetails.**apply**(userDetails1);
+printDetails.apply(userDetails1);
 ```
 
 ```
@@ -235,7 +235,7 @@ const userDetails1 = {
         console.log(this.name,state,country)
     }
 
-printDetails.**apply**(userDetails1,"Jharkhand", "India")
+printDetails.apply(userDetails1,"Jharkhand", "India")
 ```
 
 ```
