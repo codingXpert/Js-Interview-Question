@@ -12,7 +12,7 @@ Let we have some objects:-
 const userDetails1 = {
     name: "Rohan",
     age: "23",
-    designation: "software developer"
+    designation: "software developer",
     printDetails: function() {
         console.log(this.name)         //this refers/points to the current object
     }
@@ -23,7 +23,7 @@ userDetails1.printDetails();
 const userDetails2 = {
     name: "Deepak",
     age: "24",
-    designation: "backend developer"
+    designation: "backend developer",
     printDetails: function() {
         console.log(this.name)         //this refers/points to the current object
     }
@@ -36,3 +36,38 @@ userDetails1.printDetails();
 
 * To solve this issue we can use call or apply, however there is a very basic difference between these two which we will see with the help of example.
 
+### Call
+***
+
+* Solving the above problem with **call()**.
+
+```javascript
+
+const userDetails1 = {
+    name: "Rohan",
+    age: "23",
+    designation: "software developer",
+    printDetails: function() {
+        console.log(this.name)
+    }
+}
+userDetails1.printDetails();
+
+
+const userDetails2 = {
+    name: "Deepak",
+    age: "24",
+    designation: "backend developer"
+}
+userDetails1.printDetails.call(userDetails2);  //call the printDetails() method of userDetails1 for userDetails2.
+
+```
+
+```
+Output
+
+Rohan
+Deepak
+```
+
+* Now we need not to create the printDetails() method again and again to print the same data.
