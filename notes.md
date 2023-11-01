@@ -247,5 +247,57 @@ printDetails.apply(userDetails1,"Jharkhand", "India")
 TypeError: CreateListFromArrayLike called on non-object
 ```
 
+### Bind()
+***
 
+* The bind() method creates a new function where this keyword refers to the parameter in the parenthesis. This way the bind() method enables calling a function with a specified this value. 
+
+* Bind() method tells us that don't call the function directly instead store it as new function and call and use whenever needed.
+
+```javascript
+
+const userDetails1 = {
+    name: "Rohan",
+    age: "23",
+    designation: "software developer",
+}
+
+ let printDetails = function(state, country) {
+        console.log(this.name,state,country)
+    }
+
+const newFun = printDetails.bind(userDetails1,["Jharkhand", "India"]);
+newFun();
+```
+
+```
+Output
+
+Rohan [ 'Jharkhand', 'India' ] undefined
+```
+
+
+```javascript
+
+const userDetails1 = {
+    name: "Rohan",
+    age: "23",
+    designation: "software developer",
+}
+
+ let printDetails = function(state, country) {
+        console.log(this.name,state,country)
+    }
+
+const newFun = printDetails.bind(userDetails1,"Jharkhand", "India");
+newFun();
+```
+
+```
+Output
+
+Rohan Jharkhand India
+```
+
+* Here we are calling the printDetails function and storing this in a variable newFun and we can call this variable as a new function whenever we need.
 
