@@ -33,5 +33,5 @@ const userDetails2 = {
 
 * Now I want to print the name of the user and for this we are creating a new function in every single object which is not a very good practice as we creating the new functions for just printing the same thing i.e, name etc.
 
-* To this issue we can use call or apply, however there is a very basic difference between these two which we will see with the help of example.
+* To solve this issue we can use call or apply, however there is a very basic difference between these two which we will see with the help of example.
 
