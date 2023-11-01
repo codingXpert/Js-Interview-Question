@@ -141,19 +141,24 @@ const userDetails1 = {
     designation: "software developer",
 }
 
- let printDetails = function() {
-        console.log(this.name)
+ let printDetails = function(state, country) {
+        console.log(this.name,state,country)
     }
 
-printDetails.call(userDetails1)
+printDetails.call(userDetails1,"Jharkhand", "India")
 
 const userDetails2 = {
     name: "Deepak",
     age: "24",
     designation: "backend developer"
 }
-printDetails.call(userDetails2);  
+printDetails.call(userDetails2,"Bihar", "India");
+```
+```
+Output
 
+Rohan Jharkhand India
+Deepak Bihar India
 ```
 
 
