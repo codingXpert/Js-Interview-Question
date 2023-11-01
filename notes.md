@@ -163,8 +163,89 @@ Rohan Jharkhand India
 Deepak Bihar India
 ```
 
+### Apply()
+***
 
+* The apply() in Javascript is used to call a function in a different object with the given **this(current object reference)** value, and the arguments are passed in the form of an array. 
 
+* And this is the only difference between call() and apply() that with **call()** we can not pass the arguments as a single array list, we have to pass arguments separately and individually. But with **apply()** we can pass the multiple argument as single array list.
+
+**Example**
+
+```javascript
+
+const userDetails1 = {
+    name: "Rohan",
+    age: "23",
+    designation: "software developer",
+}
+
+ let printDetails = function(state, country) {
+        console.log(this.name,state,country)
+    }
+
+printDetails.apply(userDetails1, **["Jharkhand", "India"]**)
+```
+
+```
+Output
+
+Rohan Jharkhand India
+```
+
+* This method allows us to write methods that can be used on different objects and hence increase the reusability of code.
+
+> Note : we can also use apply() instead of call() only when there is no argument in the apply().
+
+**Example**
+
+```javascript
+const userDetails1 = {
+    name: "Rohan",
+    age: "23",
+    designation: "software developer",
+}
+
+ let printDetails = function() {
+        console.log(this.name)
+    }
+
+printDetails.**apply**(userDetails1);
+```
+
+```
+Output
+
+Rohan
+```
+
+> Note: But if we are passing argument and using apply() then we must have to pass the arguments as array, otherwise we will get error.
+
+**Example**
+
+```javascript
+
+const userDetails1 = {
+    name: "Rohan",
+    age: "23",
+    designation: "software developer",
+}
+
+ let printDetails = function(state, country) {
+        console.log(this.name,state,country)
+    }
+
+printDetails.**apply**(userDetails1,"Jharkhand", "India")
+```
+
+```
+Output
+
+printDetails.apply(userDetails1,"Jharkhand", "India")
+             ^
+
+TypeError: CreateListFromArrayLike called on non-object
+```
 
 
 
