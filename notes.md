@@ -72,7 +72,7 @@ Deepak
 
 * Now we need not to create the printDetails() method again and again to print the same data.
 
-> **Let us see one more scenario where the printDetails() method is outside the object i.e, it is a individual a function,  then how we will be using call()**
+> **Let us see one more scenario where the printDetails() method is outside the object i.e, it is an individual a function,  then how we will be using call()**
 
 **Example**
 
