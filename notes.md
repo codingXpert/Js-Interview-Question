@@ -39,6 +39,8 @@ userDetails1.printDetails();
 ### Call
 ***
 
+The call() method calls a function by passing this and specified values as arguments.
+
 * Solving the above problem with **call()**.
 
 ```javascript
