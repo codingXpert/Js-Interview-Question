@@ -71,3 +71,48 @@ Deepak
 ```
 
 * Now we need not to create the printDetails() method again and again to print the same data.
+
+> **Let us see one more scenario where the printDetails() method is outside the object i.e, it is a individual a function,  then how we will be using call()**
+
+**Example**
+
+```javascript
+
+const userDetails1 = {
+    name: "Rohan",
+    age: "23",
+    designation: "software developer",
+}
+
+ let printDetails = function() {
+        console.log(this.name)
+    }
+
+printDetails.call(userDetails1)
+
+const userDetails2 = {
+    name: "Deepak",
+    age: "24",
+    designation: "backend developer"
+}
+printDetails.call(userDetails2);  
+
+```
+
+```
+
+Output:
+
+Rohan
+Deepak
+
+```
+
+
+
+
+
+
+
+
+
