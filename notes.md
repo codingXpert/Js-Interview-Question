@@ -14,9 +14,10 @@ const userDetails1 = {
     age: "23",
     designation: "software developer"
     printDetails: function() {
-        console.log(this.name)         //this refers to the current object
+        console.log(this.name)         //this refers/points to the current object
     }
 }
+userDetails1.printDetails();
 
 
 const userDetails2 = {
@@ -24,10 +25,10 @@ const userDetails2 = {
     age: "24",
     designation: "backend developer"
     printDetails: function() {
-        console.log(this.name)         //this refers to the current object
+        console.log(this.name)         //this refers/points to the current object
     }
 }
-
+userDetails1.printDetails();
 
 ```
 
