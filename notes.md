@@ -95,6 +95,7 @@ const userDetails2 = {
     age: "24",
     designation: "backend developer"
 }
+//function borrowing
 printDetails.call(userDetails2);  
 
 ```
@@ -130,6 +131,30 @@ Deepak
 
 * The printDetails function is a generic function that can be called on different objects, and it uses the this keyword to access and print the name property of the object it's called on. By using the call method, you can change the context (i.e., the value of this) for the function, allowing it to work with different objects and print their respective name properties.
 
+> **call() method with argument passing**
+
+```javascript
+
+const userDetails1 = {
+    name: "Rohan",
+    age: "23",
+    designation: "software developer",
+}
+
+ let printDetails = function() {
+        console.log(this.name)
+    }
+
+printDetails.call(userDetails1)
+
+const userDetails2 = {
+    name: "Deepak",
+    age: "24",
+    designation: "backend developer"
+}
+printDetails.call(userDetails2);  
+
+```
 
 
 
