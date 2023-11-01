@@ -126,7 +126,9 @@ Deepak
 
 * When printDetails is called on userDetails2, this refers to userDetails2, and it prints "Deepak" to the console because userDetails2 has a name property with the value "Deepak".
 
-* In summary, the printDetails function is a generic function that can be called on different objects, and it uses the this keyword to access and print the name property of the object it's called on. By using the call method, you can change the context (i.e., the value of this) for the function, allowing it to work with different objects and print their respective name properties.
+**Summary**
+
+* The printDetails function is a generic function that can be called on different objects, and it uses the this keyword to access and print the name property of the object it's called on. By using the call method, you can change the context (i.e., the value of this) for the function, allowing it to work with different objects and print their respective name properties.
 
 
 
