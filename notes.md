@@ -305,3 +305,22 @@ Rohan Jharkhand India
 ***
 
 ![Screenshot 2023-11-01 195004](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/968d194a-a49f-418d-97b5-a68ac9500805)
+
+
+### Map(), Filter(), Reduce(), forEach() And Sort() 
+***
+
+**forEach()**
+
+* forEach() is a higher order function as it receives a callback as parameter.
+
+* The forEach() method is an iterative method. It calls a provided callbackFn function once for each element in an array in ascending-index order. 
+
+* Unlike map() , forEach() always returns undefined and is not chainable.
+
+* There is no way to stop or break a forEach() loop other than by throwing an exception. If we need such behavior, the forEach() method is the wrong tool.
+
+**Syntax And Parameters**
+
+![Screenshot 2023-11-02 190850](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/6962733f-fd4b-4310-8669-597e0bb3ca39)
+
