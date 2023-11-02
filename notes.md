@@ -334,9 +334,6 @@ const companies = [
     {name: "TCS", category: "Product Based", start: "1956", end: "2080"},
     {name: "Mindtree", category: "Product Based", start: "1981", end: "2050"}
 ]
-
-
-const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45,, 25, 64, 32];
 ```
 
 **Traditional Approach To Iterate:-**
@@ -397,4 +394,77 @@ Output
 44 1 [ 65, 44, 12, 4 ]
 12 2 [ 65, 44, 12, 4 ]
 4 3 [ 65, 44, 12, 4 ]
+```
+
+ **Filter()**
+ ***
+
+ * filter() is a higher order function.
+
+ * The filter() method creates a new array filled with elements that pass a test provided by a function. 
+
+ * The filter() method does not execute the function for empty elements. 
+
+ * The filter() method does not change the original array.
+
+**Syntax And Parameters**
+
+![Screenshot 2023-11-02 202943](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/458ec8a3-e016-4831-91ce-3540b34628c1)
+
+![Screenshot 2023-11-02 202958](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/e31cc419-c13a-45f1-a97b-b894b7c76210)
+
+**Examples**
+
+```javascript
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45,, 25, 64, 32];
+```
+**Traditional Approach To Iterate:-**
+
+```javascript
+for(let i=0; i<=ages.length; i++){
+    if(ages[i] >= 20){
+        console.log(ages[i]);
+    }
+}
+```
+
+```
+Output
+
+33
+20
+54
+21
+44
+61
+45
+25
+64
+32
+```
+
+**filter() Method To Iterate**
+
+```javascript
+const age = ages.filter(function(age){
+    if(age >= 20){
+        return true;
+    }
+});
+console.log(age);
+```
+
+```javascript
+[33, 20, 54, 21, 44,61, 45, 25, 64, 32]
+```
+
+**Shorthand Way Of Writing This(Using Arrow Function)**
+
+```javascript
+const age = ages.filter(age => age >= 20);
+console.log(age);
+```
+
+```javascript
+[33, 20, 54, 21, 44,61, 45, 25, 64, 32]
 ```
