@@ -324,3 +324,57 @@ Rohan Jharkhand India
 
 ![Screenshot 2023-11-02 190850](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/6962733f-fd4b-4310-8669-597e0bb3ca39)
 
+**Examples**
+
+```javascript
+const companies = [
+    {name: "Google", category: "Product Based", start: "1981", end: "2050"},
+    {name: "Paytm", category: "Product Based", start: "1999", end: "2040"},
+    {name: "Amazon", category: "Product Based", start: "1967", end: "2060"},
+    {name: "TCS", category: "Product Based", start: "1956", end: "2080"},
+    {name: "Mindtree", category: "Product Based", start: "1981", end: "2050"}
+]
+
+
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45,, 25, 64, 32];
+```
+
+**Traditional Approach To Iterate:-**
+
+```javascript
+for(let i=0; i<=companies.length; i++){
+    console.log(companies[i].name);
+}
+```
+
+**forEach() Method To Iterate**
+
+```javascript
+companies.forEach(function(company){
+    console.log(company.name);
+})
+```
+
+**Shorthand Way Of Writing This(Using Arrow Function)**
+
+```javascript
+companies.forEach((company) => {
+    console.log(company.name);
+})
+```
+
+**One Line Code**
+
+```javascript
+companies.forEach(company => console.log(company.name));   // if we do not have multiple argument in callback we need not to use '()'
+```
+
+```
+Output Of All the code
+
+Google
+Paytm
+Amazon
+TCS
+Mindtree
+```
