@@ -378,3 +378,23 @@ Amazon
 TCS
 Mindtree
 ```
+
+> Note: We can also iterate over any function.
+
+```javascript
+const numbers = [65, 44, 12, 4];
+numbers.forEach(myFunction)
+
+function myFunction(item, index, arr) {
+  console.log(item, index, arr);
+}
+```
+
+```bash
+Output
+
+65 0 [ 65, 44, 12, 4 ]
+44 1 [ 65, 44, 12, 4 ]
+12 2 [ 65, 44, 12, 4 ]
+4 3 [ 65, 44, 12, 4 ]
+```
