@@ -301,6 +301,7 @@ Rohan Jharkhand India
 
 * Here we are calling the printDetails function and storing this in a variable newFun and we can call this variable as a new function whenever we need.
 
-### What is 'this' Javascript
+### What is 'this' in Javascript
+***
 
 ![Screenshot 2023-11-01 195004](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/968d194a-a49f-418d-97b5-a68ac9500805)
