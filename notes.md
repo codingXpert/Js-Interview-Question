@@ -675,3 +675,14 @@ Output
 
 [5,12,13,15,16,20,21,25,32,33,44,45,54,61,64]
 ```
+
+```javascript
+const sortedAges = ages.sort((a, b) => (b - a));
+console.log(sortedAges);
+```
+
+```
+Output
+
+[64,61,54,45,44,33,32,25,21,20,16,15,13,12,5]
+```
