@@ -569,3 +569,54 @@ Output
 ![Screenshot 2023-11-03 125938](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/010512f9-9126-4a65-b0d7-9618cfbb2125)
 
 ![Screenshot 2023-11-03 130002](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/297eb516-52d4-49d4-b9ed-9b44da8f9a67)
+
+**Example**
+
+```javascript
+
+const sorted = companies.sort(function(c1, c2){
+    if(c1.start > c2.start){
+        return 1;
+    }else{
+        return -1;
+    }
+});
+console.log(sorted);
+```
+
+```
+Output 
+
+[
+  {
+    name: 'TCS',
+    category: 'Product Based',
+    start: '1956',
+    end: '2080'
+  },
+  {
+    name: 'Amazon',
+    category: 'Product Based',
+    start: '1967',
+    end: '2060'
+  },
+  {
+    name: 'Mindtree',
+    category: 'Product Based',
+    start: '1981',
+    end: '2050'
+  },
+  {
+    name: 'Google',
+    category: 'Product Based',
+    start: '1981',
+    end: '2050'
+  },
+  {
+    name: 'Paytm',
+    category: 'Product Based',
+    start: '1999',
+    end: '2040'
+  }
+]
+```
