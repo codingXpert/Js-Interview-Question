@@ -416,7 +416,7 @@ Output
 **Examples**
 
 ```javascript
-const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45,, 25, 64, 32];
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 ```
 **Traditional Approach To Iterate:-**
 
@@ -723,3 +723,46 @@ Output
 ![Screenshot 2023-11-03 135010](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/6bf8a23a-dc21-4fb0-a868-3e09fd1280e9)
 
 ![Screenshot 2023-11-03 135018](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/7b5b07cb-80bf-456f-ac6d-5fcd88654f35)
+
+
+**Example**
+
+```javascript
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+```
+
+**Traditional Approach To Find Sum/Total**
+
+```javascript
+
+let total = 0;
+for(let i=0; i<ages.length; i++){
+    total += ages[i]
+}
+console.log(total);
+```
+
+**solving by reduce()**
+
+```javascript
+
+const sumAges = ages.reduce(function(total, age){
+    return total+age;
+},0);
+console.log(sumAges);
+```
+
+**Shorthand Way Of Writing This(Using Arrow Function)**
+
+```javascript
+const sumAges = ages.reduce((total, age) => total+age, 0);
+console.log(sumAges);
+```
+
+> **Note:-** zero is the initial value of total.
+
+```
+Output of the above 3 codes
+
+460
+```
