@@ -702,3 +702,24 @@ Output
 
 [64,61,54,45,44,33,32,25,21,20,16,15,13,12,5]
 ```
+
+### Reduce()
+***
+
+* reduce() is a higher order predefined method.
+
+* The reduce() method executes a reducer function for array element.
+
+* The reduce() method returns a single value: the function's accumulated result.
+
+* The reduce() method does not execute the function for empty array elements.
+
+* The reduce() method does not change the original array.
+
+**Syntax And Parameters**
+
+![Screenshot 2023-11-03 134950](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/f9f57328-ae37-4de2-a6ab-58c8ce282714)
+
+![Screenshot 2023-11-03 135010](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/6bf8a23a-dc21-4fb0-a868-3e09fd1280e9)
+
+![Screenshot 2023-11-03 135018](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/7b5b07cb-80bf-456f-ac6d-5fcd88654f35)
