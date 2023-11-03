@@ -665,6 +665,22 @@ Output
 ]
 ```
 
+> **Explanation**
+
+The comparison is done as follows:
+
+* If c1.start is greater than c2.start, the function returns 1. This indicates that c1 should come after c2 in the sorted array.
+
+* Otherwise, if c1.start is less than or equal to c2.start, the function returns -1. This indicates that c1 should come before or stay in the same position as c2 in the sorted array.
+
+* 1 is for ascending order.
+
+* -1 is for descending order.
+
+* The sort method uses the comparison function to determine the order of the elements in the array. It repeatedly calls the comparison function for pairs of elements and rearranges them based on the return values until the array is sorted in ascending order according to the "start" property.
+
+**Some more examples**
+
 ```javascript
 const sortedAges = ages.sort((a, b) => (a - b));
 console.log(sortedAges);
