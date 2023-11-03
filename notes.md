@@ -620,3 +620,47 @@ Output
   }
 ]
 ```
+
+**Shorthand Way Of Writing This(Using Arrow Function)**
+
+```javascript
+const sorted = companies.sort((c1, c2) => (c1.start > c2.start ? 1 : -1));
+console.log(sorted);
+```
+
+```
+Output
+
+[
+  {
+    name: 'TCS',
+    category: 'Product Based',
+    start: '1956',
+    end: '2080'
+  },
+  {
+    name: 'Amazon',
+    category: 'Product Based',
+    start: '1967',
+    end: '2060'
+  },
+  {
+    name: 'Mindtree',
+    category: 'Product Based',
+    start: '1981',
+    end: '2050'
+  },
+  {
+    name: 'Google',
+    category: 'Product Based',
+    start: '1981',
+    end: '2050'
+  },
+  {
+    name: 'Paytm',
+    category: 'Product Based',
+    start: '1999',
+    end: '2040'
+  }
+]
+```
