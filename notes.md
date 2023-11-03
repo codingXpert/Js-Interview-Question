@@ -468,3 +468,47 @@ console.log(age);
 ```javascript
 [33, 20, 54, 21, 44,61, 45, 25, 64, 32]
 ```
+
+```javascript
+const sb = companies.filter((company) => company.category == "Product Based");
+console.log(sb);
+```
+
+```
+Output
+
+node /tmp/ooKj7gjC2q.js
+[
+  {
+    name: 'Google',
+    category: 'Product Based',
+    start: '1981',
+    end: '2050'
+  },
+  {
+    name: 'Paytm',
+    category: 'Product Based',
+    start: '1999',
+    end: '2040'
+  },
+  {
+    name: 'Amazon',
+    category: 'Product Based',
+    start: '1967',
+    end: '2060'
+  },
+  {
+    name: 'TCS',
+    category: 'Product Based',
+    start: '1956',
+    end: '2080'
+  },
+  {
+    name: 'Mindtree',
+    category: 'Product Based',
+    start: '1981',
+    end: '2050'
+  }
+]
+
+```
