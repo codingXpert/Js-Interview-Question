@@ -553,3 +553,19 @@ Output
   'Mindtree 1981'
 ]
 ```
+
+### Sort()
+***
+* sort() is higher order predefined function.
+
+* The sort() sorts the elements of an array.
+
+* The sort() overwrites the original array.
+
+* The sort() sorts the elements as strings in alphabetical and ascending order.
+
+**Syntax And Parameters**
+
+![Screenshot 2023-11-03 125938](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/010512f9-9126-4a65-b0d7-9618cfbb2125)
+
+![Screenshot 2023-11-03 130002](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/297eb516-52d4-49d4-b9ed-9b44da8f9a67)
