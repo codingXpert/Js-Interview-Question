@@ -455,6 +455,8 @@ console.log(age);
 ```
 
 ```javascript
+Output
+
 [33, 20, 54, 21, 44,61, 45, 25, 64, 32]
 ```
 
@@ -466,6 +468,8 @@ console.log(age);
 ```
 
 ```javascript
+Output
+
 [33, 20, 54, 21, 44,61, 45, 25, 64, 32]
 ```
 
