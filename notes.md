@@ -481,7 +481,6 @@ console.log(sb);
 ```
 Output
 
-node /tmp/ooKj7gjC2q.js
 [
   {
     name: 'Google',
