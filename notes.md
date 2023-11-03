@@ -664,3 +664,14 @@ Output
   }
 ]
 ```
+
+```javascript
+const sortedAges = ages.sort((a, b) => (a - b));
+console.log(sortedAges);
+```
+
+```javascript
+Output
+
+[5,12,13,15,16,20,21,25,32,33,44,45,54,61,64]
+```
