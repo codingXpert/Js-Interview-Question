@@ -515,3 +515,41 @@ Output
 ]
 
 ```
+
+**Map()**
+***
+* map() is a higher order function.
+
+* map() creates a new array from calling a function for every array element.
+
+* map() does not execute the function for empty elements.
+
+* map() does not change the original array.
+
+**Syntax And Parameters**
+
+![Screenshot 2023-11-03 112124](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/eff55a8d-0852-40e5-be7d-9ab5401dbcb2)
+
+![Screenshot 2023-11-03 112136](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/3bb83802-846c-4337-8e1b-95acd6bb55da)
+
+
+**Examples**
+```javascript
+
+const data = companies.map((company) => {
+    return `${company.name} ${company.start}`
+});
+console.log(data)
+```
+
+```
+Output
+
+[
+  'Google 1981',
+  'Paytm 1999',
+  'Amazon 1967',
+  'TCS 1956',
+  'Mindtree 1981'
+]
+```
