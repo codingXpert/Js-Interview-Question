@@ -794,6 +794,24 @@ Output
 ```
 
 ```javascript
+const myArray = [5, 4, 3, 2, 1]
+
+myArray.forEach(x => console.log(x * x));
+console.log(myArray);
+```
+
+```
+Output
+
+25
+16
+9
+4
+1
+[ 5, 4, 3, 2, 1 ]
+```
+
+```javascript
 
 const myArray = [
   { id: 1, name: "john" },
