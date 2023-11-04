@@ -766,3 +766,52 @@ Output of the above 3 codes
 
 460
 ```
+
+### What Is Difference Between Map() And forEach().
+***
+
+* The map() method returns a new array, whereas the forEach() method does not return a new array.
+
+* The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
+
+* The map() method can be used with other array methods, such as the filter() method, whereas the forEach() method cannot be used with other array methods.
+
+**Examples**
+
+```javascript
+const myArray = [5, 4, 3, 2, 1]
+
+const result = myArray.map(x => x * x);
+console.log(result);
+console.log(myArray);
+```
+
+```
+Output
+
+[ 25, 16, 9, 4, 1 ]
+[ 5, 4, 3, 2, 1 ]
+```
+
+```javascript
+
+const myArray = [
+  { id: 1, name: "john" },
+  { id: 2, name: "Ali" },
+  { id: 3, name: "Mass" },
+]
+
+ myArray.forEach(element => console.log(element.name));
+```
+
+```
+Output
+
+john
+Ali
+Mass
+```
+
+ **Conclusion**
+
+In conclusion, the forEach() and map() methods are both used to loop through arrays and objects. The forEach() method does not return a new array, whereas the map() method returns a new array. The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
