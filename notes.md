@@ -762,7 +762,7 @@ console.log(sumAges);
 > **Note:-** zero is the initial value of total.
 
 ```
-Output of the above 3 codes
+Output of the above 3 codes.
 
 460
 ```
