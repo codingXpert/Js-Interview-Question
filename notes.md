@@ -703,7 +703,7 @@ Output
 [64,61,54,45,44,33,32,25,21,20,16,15,13,12,5]
 ```
 
-### Reduce()
+### Reduce() Method
 ***
 
 * reduce() is a higher order predefined method.
