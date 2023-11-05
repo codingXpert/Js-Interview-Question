@@ -396,7 +396,7 @@ Output
 4 3 [ 65, 44, 12, 4 ]
 ```
 
- **Filter()**
+ ### Filter() Method
  ***
 
  * filter() is a higher order function.
