@@ -516,7 +516,7 @@ Output
 
 ```
 
-**Map()**
+### Map() Method
 ***
 * map() is a higher order function.
 
