@@ -310,7 +310,7 @@ Rohan Jharkhand India
 ### Map(), Filter(), Reduce(), forEach() And Sort() 
 ***
 
-**forEach()**
+**forEach() Method**
 
 * forEach() is a higher order function as it receives a callback as parameter.
 
