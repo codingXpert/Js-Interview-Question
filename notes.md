@@ -554,7 +554,7 @@ Output
 ]
 ```
 
-### Sort()
+### Sort() Method
 ***
 * sort() is higher order predefined function.
 
