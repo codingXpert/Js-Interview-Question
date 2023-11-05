@@ -812,7 +812,6 @@ Output
 ```
 
 ```javascript
-
 const myArray = [
   { id: 1, name: "john" },
   { id: 2, name: "Ali" },
