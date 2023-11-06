@@ -834,7 +834,7 @@ Mass
 In conclusion, the forEach() and map() methods are both used to loop through arrays and objects. The forEach() method does not return a new array, whereas the map() method returns a new array. The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
 
 
-### Destructuring, Rest and Spread Operator.
+### Destructuring, Rest and Spread Operator. 
 ***
 
 ![freeCodeCamp-Cover-1](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/cf245dc7-dd40-40ae-ad2a-ac00801ad57d) 
