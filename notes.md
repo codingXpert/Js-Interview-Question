@@ -840,7 +840,7 @@ In conclusion, the forEach() and map() methods are both used to loop through arr
 ![freeCodeCamp-Cover-1](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/cf245dc7-dd40-40ae-ad2a-ac00801ad57d) 
 
 
-#### Destructuring
+#### Destructuring(Unpacking)
 * Destructuring assignment is a syntax that allows us to assign object properties or array items as variables. This can greatly reduce the lines of code necessary to manipulate data in these structures. There are two types of destructuring: Object destructuring and Array destructuring.
 
 **1.Object Destructuring**
@@ -974,5 +974,43 @@ Output
 
 * The string **A string** was implicitly converted into an object here to retrieve the length property.
 
+
+**2.Array Destructuring**
+
+* Array destructuring allows you to create new variables using an array item as a value.
+
+```javascript
+
+const date = ['1970', '12', '01']
+```
+* We can create variables from the items in the array:
+
+```javascript
+
+// Create variables from the Array items
+const year = date[0]
+const month = date[1]
+const day = date[2]
+```
+
+* But doing this manually can take up a lot of space in our code. With array destructuring, we can unpack the values from the array in order and assign them to their own variables, like so:
+
+```javascript
+
+// Destructure Array values into variables
+const [year, month, day] = date;
+
+console.log(year)
+console.log(month)
+console.log(day)
+```
+
+```
+Output
+
+1970
+12
+01
+```
 
 
