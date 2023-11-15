@@ -904,3 +904,57 @@ Output
 
 1
 ```
+
+We can also **destructure nested object values**. For example, update the note object to have a nested author object:
+
+```javascript
+
+const note = {
+  id: 1,
+  title: 'My first note',
+  date: '01/01/1970',
+  author: {
+    firstName: 'Sherlock',
+    lastName: 'Holmes',
+  },
+}
+```
+
+```javascript
+
+// Destructure nested properties
+const {
+  id,
+  title,
+  date,
+  author: { firstName, lastName },
+} = note
+
+console.log(`${firstName} ${lastName}`)
+```
+
+```
+Output
+
+Sherlock Holmes
+```
+
+> Note that in this example, though we have access to the contents of the author object, the author object itself is not accessible. In order to access an object as well as its nested values, we would have to declare them separately:
+
+```javascript
+
+// Access object and nested values
+const {
+  author,
+  author: { firstName, lastName },
+} = note
+
+console.log(author)
+```
+
+```
+Output
+
+{firstName: "Sherlock", lastName: "Holmes"}
+```
+
