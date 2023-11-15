@@ -841,11 +841,11 @@ In conclusion, the forEach() and map() methods are both used to loop through arr
 
 
 #### Destructuring
-Destructuring assignment is a syntax that allows us to assign object properties or array items as variables. This can greatly reduce the lines of code necessary to manipulate data in these structures. There are two types of destructuring: Object destructuring and Array destructuring.
+* Destructuring assignment is a syntax that allows us to assign object properties or array items as variables. This can greatly reduce the lines of code necessary to manipulate data in these structures. There are two types of destructuring: Object destructuring and Array destructuring.
 
 **1.Object Destructuring**
 
-Object destructuring allow us to create new variables using an object property as the value.
+* Object destructuring allow us to create new variables using an object property as the value.
 
 > Example
 
@@ -858,7 +858,7 @@ const note = {
 }
 ```
 
-Traditionally, if you wanted to create a new variable for each property, you would have to assign each variable individually, with a lot of repetition:
+* Traditionally, if you wanted to create a new variable for each property, you would have to assign each variable individually, with a lot of repetition:
 
 ```javascript
 
@@ -867,7 +867,7 @@ const title = note.title
 const date = note.date
 ```
 
-With object destructuring, this can all be done in one line. By surrounding each variable in curly brackets {}, JavaScript will create new variables from each property with the same name:
+* With object destructuring, this can all be done in one line. By surrounding each variable in curly brackets {}, JavaScript will create new variables from each property with the same name:
 
 ```javascript
 
@@ -878,7 +878,7 @@ console.log(title)
 console.log(date)
 ```
 
-We will get the original property values as output:
+* We will get the original property values as output:
 
 ```
 Output
@@ -891,7 +891,7 @@ My first note
 > Note: Destructuring an object does not modify the original object. We could still call the original note with all its entries intact.
 
 
-The default assignment for object destructuring creates new variables with the same name as the object property. If we do not want the new variable to have the same name as the property name, we also have the option of **renaming the new variable** by using a colon (:) to decide a new name, as seen with **noteId** in the following:
+* The default assignment for object destructuring creates new variables with the same name as the object property. If we do not want the new variable to have the same name as the property name, we also have the option of **renaming the new variable** by using a colon (:) to decide a new name, as seen with **noteId** in the following:
 
 ```javascript
 
@@ -905,7 +905,7 @@ Output
 1
 ```
 
-We can also **destructure nested object values**. For example, update the note object to have a nested author object:
+* We can also **destructure nested object values**. For example, update the note object to have a nested author object:
 
 ```javascript
 
