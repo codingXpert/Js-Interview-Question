@@ -878,7 +878,7 @@ console.log(title)
 console.log(date)
 ```
 
-You will get the original property values as output:
+We will get the original property values as output:
 
 ```
 Output
@@ -957,4 +957,20 @@ Output
 
 {firstName: "Sherlock", lastName: "Holmes"}
 ```
+
+* Finally, destructuring can be used to access the object properties of primitive values. For example, String is a global object for strings, and has a length property
+
+```javascript
+
+const { length } = 'A string'
+console.log(length)
+```
+
+```
+Output
+
+8
+```
+
+
 
