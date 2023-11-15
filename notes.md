@@ -887,3 +887,5 @@ Output
 My first note
 01/01/1970
 ```
+
+> Note: Destructuring an object does not modify the original object. We could still call the original note with all its entries intact.
