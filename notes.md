@@ -838,3 +838,8 @@ In conclusion, the forEach() and map() methods are both used to loop through arr
 ***
 
 ![freeCodeCamp-Cover-1](https://github.com/codingXpert/Js-Interview-Question/assets/101451924/cf245dc7-dd40-40ae-ad2a-ac00801ad57d) 
+
+
+#### Destructuring
+Destructuring assignment is a syntax that allows us to assign object properties or array items as variables. This can greatly reduce the lines of code necessary to manipulate data in these structures. There are two types of destructuring: Object destructuring and Array destructuring.
+
