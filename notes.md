@@ -972,5 +972,7 @@ Output
 8
 ```
 
+* The string **A string** was implicitly converted into an object here to retrieve the length property.
+
 
 
