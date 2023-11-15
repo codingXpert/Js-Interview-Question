@@ -889,3 +889,18 @@ My first note
 ```
 
 > Note: Destructuring an object does not modify the original object. We could still call the original note with all its entries intact.
+
+
+The default assignment for object destructuring creates new variables with the same name as the object property. If we do not want the new variable to have the same name as the property name, we also have the option of **renaming the new variable** by using a colon (:) to decide a new name, as seen with **noteId** in the following:
+
+```javascript
+
+const { id: noteId, title, date } = note;
+console.log(noteId);
+```
+
+```
+Output
+
+1
+```
