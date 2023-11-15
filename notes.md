@@ -843,3 +843,6 @@ In conclusion, the forEach() and map() methods are both used to loop through arr
 #### Destructuring
 Destructuring assignment is a syntax that allows us to assign object properties or array items as variables. This can greatly reduce the lines of code necessary to manipulate data in these structures. There are two types of destructuring: Object destructuring and Array destructuring.
 
+**Object Destructuring**
+
+Object destructuring allow us to create new variables using an object property as the value.
