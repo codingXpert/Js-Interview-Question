@@ -846,3 +846,44 @@ Destructuring assignment is a syntax that allows us to assign object properties 
 **Object Destructuring**
 
 Object destructuring allow us to create new variables using an object property as the value.
+
+> Example
+
+```javascript
+
+const note = {
+  id: 1,
+  title: 'My first note',
+  date: '01/01/1970',
+}
+```
+
+Traditionally, if you wanted to create a new variable for each property, you would have to assign each variable individually, with a lot of repetition:
+
+```javascript
+
+const id = note.id
+const title = note.title
+const date = note.date
+```
+
+With object destructuring, this can all be done in one line. By surrounding each variable in curly brackets {}, JavaScript will create new variables from each property with the same name:
+
+```javascript
+
+const { id, title, date } = note
+
+console.log(id)
+console.log(title)
+console.log(date)
+```
+
+You will get the original property values as output:
+
+```
+Output
+
+1
+My first note
+01/01/1970
+```
